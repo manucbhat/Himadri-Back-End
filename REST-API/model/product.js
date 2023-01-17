@@ -9,6 +9,13 @@ const productSchema = mongoose.Schema({
         type:String,
         required:true
     },
+    imgURL:{
+        type:String
+    },
+    category:{
+        type:String,
+        required:true
+    }
 });
 
 module.exports = mongoose.model("product",productSchema);
